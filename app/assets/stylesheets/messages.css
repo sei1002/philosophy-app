@@ -1,0 +1,37 @@
+header {
+  height: 70px;
+  background-color: #f0f0f0;
+}
+
+/* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
+.contents {
+  background-color: white;
+}
+
+.first-view{
+  height: 60vh;
+}
+
+/* 新着情報 */
+.upper-content{
+  height: 450px;
+  margin: 0 160px;
+}
+
+/* スタイリスト紹介 */
+.middle-content{
+  height: 450px;
+  margin: 0 160PX;
+}
+
+/* フォーム */
+.bottom-content {
+  height: 800px;
+  margin: 0 160px;
+}
+
+/* フッター */
+footer {
+  height: 50px;
+  background-color: #f0f0f0;
+}
