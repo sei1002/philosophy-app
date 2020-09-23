@@ -12,13 +12,13 @@
       </div>
       <div class="navbar">
         <ul class="nav-lists">
-          <a href="#">チャットを作成する</a>
-          <%# 登録、ログインしてなければ %>
-          <a href="#">新規登録</a>
-          <a href="#">ログイン</a>
-          <%# ログインしていれば %>
-          <a href="#">ニックネーム</a>
-          <a href="#">ログアウト</a>
+            <li><%= link_to 'ルームを作成', "#", class: "room-list" %></li>
+            <%# 登録、ログインしてなければ %>
+            <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+            <li><%= link_to 'ログイン', "#", class: "login" %></li>
+            <%# ログインしていれば %>
+            <li><%= link_to 'ニックネーム', "#", class: "nick-name" %></li>
+            <li><%= link_to 'ログアウト', "#", class: "logout" %></li>
         </ul>
       </div>
     </header>

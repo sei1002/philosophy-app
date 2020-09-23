@@ -23,10 +23,39 @@ header {
 }
 
 .nav-lists {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-around;
+}
+
+.room-list {
+  text-decoration: none;
+  color: #4555a8;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-size: 2.3vh;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.login {
+  text-decoration: none;
+  color: #333333;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.nick-name {
+  text-decoration: none;
+  color: #333333;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 first-viewクラスからbottom-contentクラスまでの要素の親要素
