@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hair OLIVE</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1 class="title">Philosopher</h1>
+      </div>
+      <div class="navbar">
+        <ul class="nav-lists">
+            <li><%= link_to 'ルームを作成', "#", class: "room-list" %></li>
+            <%# 登録、ログインしてなければ %>
+            <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+            <li><%= link_to 'ログイン', "#", class: "login" %></li>
+            <%# ログインしていれば %>
+            <li><%= link_to 'ニックネーム', "#", class: "nick-name" %></li>
+            <li><%= link_to 'ログアウト', "#", class: "logout" %></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contents">
+      <div class="first-view">
+        <%= image_tag "tetugaku.jpg", class:"top-image" %>
+      </div>
+    </div>
+  
+    <div class='title-contents'>
+      <h2 class='service-title'>
+        哲学について語りませんか？
+      </h2>
+      <p class='service-explain'>
+        議題は誰でも発信出来ます。
+      </p>
+      <p class='service-explain'>
+        チャットアプリです。
+      </p>
+    </div>
+
+    <div class='room-contents'>
+      <h2 class='pick-title'>ピックアップルーム</h2>
+    </div>
+
+
+    <footer>
+      <p>Sei.Nakata.Original</p>
+    </footer>
+  </body>
+</html>
