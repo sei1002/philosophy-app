@@ -1,5 +1,5 @@
 header {
-  height: 70px;
+  height: 60px;
   background-color: #ffffff;
   padding: 10px 0;
   display: flex;
@@ -12,8 +12,8 @@ header {
 
 .title {
   font-size: 7vh;
-  padding: 0 0 0 50px;
-  color: rgb(49, 66, 102);
+  padding: 0 0 0 60px;
+  color: rgb(0, 0, 0);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -29,32 +29,32 @@ header {
 
 .room-list {
   text-decoration: none;
-  color: #4555a8;
+  color: #0d1022;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 2.3vh;
 }
 
 .sign-up {
   text-decoration: none;
-  color: #333333;
+  color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .login {
   text-decoration: none;
-  color: #333333;
+  color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .nick-name {
   text-decoration: none;
-  color: #333333;
+  color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
 .logout {
   text-decoration: none;
-  color: #333333;
+  color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
