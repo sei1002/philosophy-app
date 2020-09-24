@@ -17,7 +17,7 @@
             <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
             <li><%= link_to 'ログイン', "#", class: "login" %></li>
             <%# ログインしていれば %>
-            <li><%= link_to 'ニックネーム', "#", class: "nick-name" %></li>
+            <li><%= link_to current_user.nickname , edit_user_path(current_user), class: "nick-name" %></li>
             <li><%= link_to 'ログアウト', "#", class: "logout" %></li>
         </ul>
       </div>
