@@ -83,7 +83,7 @@ footer {
 .title-contents {
   flex-direction: column;
   padding: 5vh 28vw;
-  color: rgb(229, 250, 253);
+  color: rgb(210, 246, 252);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
