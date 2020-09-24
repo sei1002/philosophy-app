@@ -42,7 +42,16 @@
       </p>
     </div>
 
-    
+    <div class='room-contents'>
+      <h2 class='pick-title'>ピックアップルーム</h2>
+      <% @rooms.each do |room| %>
+        <div class="room">
+          <div class="room-name">
+            <a href="#"><%= room.name%></a>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
 
 
