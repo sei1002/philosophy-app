@@ -12,7 +12,7 @@
       </div>
       <div class="navbar">
         <ul class="nav-lists">
-            <li><%= link_to 'ディスカッションを作成', new_room_path, class: "room-list" %></li>
+            <li><%= link_to 'ディスカッションを作成', new_room_path, class: "room-create" %></li>
             <% if user_signed_in? %>
               <li><%= link_to current_user.nickname , edit_user_path(current_user), class: "nick-name" %></li> 
               <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
@@ -42,13 +42,13 @@
       </p>
     </div>
 
+    <h2 class='pick-title'>🔥Pickup Philosophy</h2>
     <div class='room-contents'>
-      <h2 class='pick-title'>ピックアップルーム</h2>
       <% @rooms.each do |room| %>
         <div class="room">
-          <div class="room-name">
-            <a href="#"><%= room.name%></a>
-          </div>
+          <ul class="room-list">
+            ・<a href="#"><%= room.name%></a>
+          </ul>
         </div>
       <% end %>
     </div>
