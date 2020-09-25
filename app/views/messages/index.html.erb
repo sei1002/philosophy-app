@@ -47,7 +47,7 @@
       <% @rooms.each do |room| %>
         <div class="room">
           <ul class="room-list">
-            ・<a href="#"><%= room.name%></a>
+            ・<%= link_to room.name, room_path(room) %>
           </ul>
         </div>
       <% end %>
