@@ -27,7 +27,7 @@ header {
   justify-content: space-around;
 }
 
-.room-list {
+.room-create {
   text-decoration: none;
   color: #0d1022;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
@@ -38,24 +38,28 @@ header {
   text-decoration: none;
   color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-size: 2.0vh;
 }
 
 .login {
   text-decoration: none;
   color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-size: 2.0vh;
 }
 
 .nick-name {
   text-decoration: none;
   color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-size: 2.0vh;
 }
 
 .logout {
   text-decoration: none;
   color: #000000;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-size: 2.0vh;
 }
 
 first-viewクラスからbottom-contentクラスまでの要素の親要素
@@ -83,7 +87,7 @@ footer {
 .title-contents {
   flex-direction: column;
   padding: 5vh 28vw;
-  color: rgb(229, 250, 253);
+  color: rgb(210, 246, 252);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -103,6 +107,16 @@ footer {
   text-align: center;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 4vh;
+}
+
+.room-contents {
+  flex-direction: none;
+  padding: 5vh;
+  color: #000000;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-size: 4vh;
+  overflow: scroll;
 }
 
 

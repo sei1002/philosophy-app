@@ -8,11 +8,11 @@
   <body>
     <header>
       <div class="heading">
-        <h1 class="title">Philosopher</h1>
+        <div class="title">Philosopher</div>
       </div>
       <div class="navbar">
         <ul class="nav-lists">
-            <li><%= link_to 'ルームを作成', "#", class: "room-list" %></li>
+            <li><%= link_to 'ディスカッションを作成', new_room_path, class: "room-create" %></li>
             <% if user_signed_in? %>
               <li><%= link_to current_user.nickname , edit_user_path(current_user), class: "nick-name" %></li> 
               <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
@@ -31,9 +31,9 @@
     </div>
   
     <div class='title-contents'>
-      <h2 class='service-title'>
+      <div class='service-title'>
         哲学について語りませんか？
-      </h2>
+      </div>
       <p class='service-explain'>
         議題は誰でも発信出来ます。
       </p>
@@ -42,9 +42,17 @@
       </p>
     </div>
 
+    <h2 class='pick-title'>🔥Pickup Philosophy</h2>
     <div class='room-contents'>
-      <h2 class='pick-title'>ピックアップルーム</h2>
+      <% @rooms.each do |room| %>
+        <div class="room">
+          <ul class="room-list">
+            ・<a href="#"><%= room.name%></a>
+          </ul>
+        </div>
+      <% end %>
     </div>
+
 
 
     <footer>
