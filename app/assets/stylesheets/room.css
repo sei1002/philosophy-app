@@ -161,6 +161,7 @@ select {
 .header-title {
   color: rgb(5, 6, 37);
   font-size: 30px;
+  font-weight: bold;
 }
 
 .header-button {
@@ -173,6 +174,7 @@ select {
   border: 1px solid rgb(79, 82, 226);
   color: rgb(79, 82, 226);
   padding: 20px;
+  font-weight: bold;
 }
 
 .toppage-btn {

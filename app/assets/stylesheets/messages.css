@@ -13,8 +13,9 @@ header {
 .title {
   font-size: 7vh;
   padding: 0 0 0 60px;
-  color: rgb(0, 0, 0);
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  color: rgb(185, 191, 223);
+  text-shadow: 0 0 5px rgba(16, 13, 58, 0.9);
+  font-weight: bold;
 }
 
 .navbar {
@@ -30,35 +31,32 @@ header {
 .room-create {
   text-decoration: none;
   color: #0d1022;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 2.3vh;
+  font-weight: bold;
 }
 
 .sign-up {
   text-decoration: none;
   color: #000000;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 2.0vh;
 }
 
 .login {
   text-decoration: none;
   color: #000000;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 2.0vh;
 }
 
 .nick-name {
   text-decoration: none;
   color: #000000;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 2.0vh;
+  font-weight: bold;
 }
 
 .logout {
   text-decoration: none;
   color: #000000;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 2.0vh;
 }
 
@@ -101,22 +99,22 @@ footer {
 }
 
 .pick-title {
-  flex-direction: column;
   padding: 5vh;
   color: #11121b;
   text-align: center;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   font-size: 4vh;
+  font-weight: bold;
 }
 
 .room-contents {
-  flex-direction: none;
+  padding: 0 0 0 40%;
+}
+
+.room-list {
   padding: 5vh;
   color: #000000;
-  text-align: center;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-  font-size: 4vh;
-  overflow: scroll;
+  font-weight: bold;
+  font-size: 3vh;
 }
 
 
