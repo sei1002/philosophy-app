@@ -3,6 +3,10 @@ class MessagesController < ApplicationController
     @rooms = Room.all.order('created_at DESC')
   end
 
+  def new
+    @message = Message.new
+  end
+
   def create
     @room = Room.find(params[:room_id])
     @message = @room.messages.new(message_params)
@@ -10,7 +14,7 @@ class MessagesController < ApplicationController
       redirect_to room_path(@room)
     else
       @messages = @room.messages.includes(:user)
-      render :create
+      redirect_to room_path(@room)
     end
   end
 
