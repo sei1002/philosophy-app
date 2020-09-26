@@ -46,9 +46,7 @@
     <div class='room-contents'>
       <% @rooms.each do |room| %>
         <div class="room">
-          <ul class="room-list">
-            ・<%= link_to room.name, room_path(room) %>
-          </ul>
+            ●<%= link_to room.name, room_path(room), class:"room-list" %>
         </div>
       <% end %>
     </div>
