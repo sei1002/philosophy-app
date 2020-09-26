@@ -107,12 +107,10 @@ footer {
 }
 
 .room-contents {
-  flex-direction: column;
   padding: 0 0 0 40%;
 }
 
 .room-list {
-  text-decoration: none;
   padding: 5vh;
   color: #000000;
   font-weight: bold;
