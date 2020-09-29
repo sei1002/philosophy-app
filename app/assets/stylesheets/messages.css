@@ -107,11 +107,10 @@ footer {
 }
 
 .room-contents {
-  padding: 0 0 0 40%;
+  text-align: center;
 }
 
 .room-list {
-  padding: 5vh;
   color: #000000;
   font-weight: bold;
   font-size: 3vh;

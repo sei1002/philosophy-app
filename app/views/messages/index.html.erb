@@ -12,8 +12,8 @@
       </div>
       <div class="navbar">
         <ul class="nav-lists">
-            <li><%= link_to 'ディスカッションを作成', new_room_path, class: "room-create" %></li>
             <% if user_signed_in? %>
+              <li><%= link_to 'ディスカッションを作成', new_room_path, class: "room-create" %></li>
               <li><%= link_to current_user.nickname , edit_user_path(current_user), class: "nick-name" %></li> 
               <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
             <% else %>
