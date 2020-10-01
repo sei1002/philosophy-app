@@ -16,7 +16,7 @@ class RoomsController < ApplicationController
   def show
     @message = Message.new
     @room = Room.find(params[:id])
-    @messages = @room.messages.includes(:user)
+    @messages = @room.messages.includes(:user).order('created_at DESC')
   end
 
   def destroy
