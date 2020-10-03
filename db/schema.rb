@@ -54,8 +54,10 @@ ActiveRecord::Schema.define(version: 2020_09_30_124239) do
 
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_rooms_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -76,4 +78,5 @@ ActiveRecord::Schema.define(version: 2020_09_30_124239) do
   add_foreign_key "messages", "users"
   add_foreign_key "room_users", "rooms"
   add_foreign_key "room_users", "users"
+  add_foreign_key "rooms", "users"
 end
