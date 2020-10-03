@@ -12,7 +12,7 @@
     <div class="right-header">
       <div class="header-button">
         <%= link_to "Philosopher", root_path, class: "top-btn" %>
-        <% if user_signed_in? %> 
+        <% if user_signed_in? && current_user.id == @room.user_id %> 
           <%= link_to "チャットを終了する", room_path(@room), method: :delete, class: "delete-btn" %>
         <% end %>
       </div>
