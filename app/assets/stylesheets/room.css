@@ -143,8 +143,8 @@ select {
 
 .top-btn {
   padding: 20px;
-  border: 1px solid rgb(44, 45, 134);
-  color:rgb(44, 45, 134);
+  border: 1px solid rgb(11, 12, 41);
+  color:rgb(9, 10, 49);
   font-weight: bold;
 }
 
@@ -225,7 +225,7 @@ select {
 
 .form-image {
   font-size: 16px;
-  background-color: rgb(69, 117, 133);
+  background-color: rgb(11, 23, 49);
   color: white;
   padding: 20px;
   width: 60px;
