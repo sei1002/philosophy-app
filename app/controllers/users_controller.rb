@@ -11,6 +11,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @nickname = current_user.nickname
+    @rooms = current_user.rooms.order('created_at DESC')
+  end
+
   private
 
   def user_params
