@@ -13,8 +13,8 @@ header {
 .title {
   font-size: 7vh;
   padding: 0 0 0 60px;
-  color: rgb(150, 154, 175);
-  text-shadow: 0 0 5px rgba(16, 13, 58, 0.9);
+  color: rgb(54, 55, 59);
+  /* text-shadow: 0 0 5px rgba(16, 13, 58, 0.9); */
   font-weight: bold;
 }
 
@@ -85,7 +85,7 @@ footer {
 .title-contents {
   flex-direction: column;
   padding: 5vh 28vw;
-  color: rgb(210, 246, 252);
+  color: rgb(54, 55, 59);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 

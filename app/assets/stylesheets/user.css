@@ -20,14 +20,14 @@
   letter-spacing: 3px;
   font-size: 40px;
   font-weight: 200;
-  color: #6f8ed1;
+  color: #121e38;
 }
 .account-page .account-page__header h2:after {
   content: "";
   display: block;
   width: 60px;
   margin-top: 5px;
-  border-bottom: 1px solid #6f8ed1;
+  border-bottom: 1px solid #0d1c3b;
 }
 .account-page .account-page__header h5 {
   margin-bottom: 20px;
@@ -37,8 +37,9 @@
 .account-page .account-page__header .btn {
   margin-top: 20px;
   color: #fff;
-  background-color: #ccc;
-  font-size: 14px;
+  background-color: rgb(6, 5, 31);
+  font-size: 16px;
+  text-decoration: none;
 }
 .account-page .field {
   margin-bottom: 10px;
@@ -71,7 +72,7 @@
   float: left;
   margin-top: 20px;
   color: #fff;
-  background-color: #08334d;
+  background-color: #0a0e29;
 }
 .account-page .field-label .field_with_errors {
   display: inline-block;
@@ -120,4 +121,10 @@
   text-align: center;
   font-weight: bold;
   font-size: 4vh;
+}
+
+.name {
+  font-size: 5vh;
+  color: rgb(8, 12, 32);
+  font-weight: bold;
 }
