@@ -3,7 +3,8 @@
     <div class='account-page__inner--left account-page__header'>
       <h2>Log in</h2>
       <h5>登録しているユーザーでログイン</h5>
-      <%= render "devise/shared/links"%>
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn'%>
+      <%= link_to "Top Page", root_path, class: 'btn'%>
     </div>
     <div class='account-page__inner--right user-form'>
       <%= form_with model: resource, as: resource_name, url: session_path(resource_name), local: true do |f|%>
