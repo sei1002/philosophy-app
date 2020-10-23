@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root to: "messages#index"
   resources :users, only: [:edit, :update, :show]
   resources :rooms, only: [:new, :create, :show, :destroy] do
-    resources :messages, only: [:index, :create]
+    resources :messages, only: [:index, :create, :destroy]
   end
 end

@@ -16,4 +16,13 @@
     </div>
     <%= image_tag message.image.variant(resize:'500x500'), class: 'message-image' if message.image.attached?%>
   </div>
+  <% if user_signed_in? && current_user.id == message.user_id %>
+  <div class="more">
+    <ul class="more_list">
+      <li>
+        <%= link_to '削除', message_path(message.id), method: :delete, class: "delete"%>
+      </li>
+    </ul>
+  </div>
+  <% end %>
 </div>
